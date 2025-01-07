@@ -1,0 +1,23 @@
+# pyproject.toml
+[tool.poetry]
+name = "theworcoder"
+version = "0.1.0"
+description = "A Kivy-based worcoder app"
+authors = ["Juraj Bednar <juraj@bednar.io>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+# Kivy: pick a version compatible with your Python
+kivy = "^2.3.1"
+
+# The local path to worcoder
+worcoder = { path = "./worcoder" }
+kivymd = "^1.2.0"
+
+[tool.poetry.dev-dependencies]
+# Add any dev dependencies here, like linters or testers
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,48 @@
+# theworcoder.kv
+#:import MDIcon kivymd.uix.label.MDIcon
+#:import ScrollView kivy.uix.scrollview.ScrollView
+
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    Label:
+        text: "Data"
+        size_hint_y: None
+        height: "40dp"
+        font_size: "16sp"
+
+    TextInput:
+        id: data_text
+        size_hint_y: .4
+        multiline: True
+        hint_text: "Enter plain text data..."
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: "60dp"
+        spacing: 20
+
+        Button:
+            text: "Encode \\/"
+            font_size: "18sp"
+            on_release: app.encode_data()
+
+        Button:
+            text: "Decode /\\"
+            font_size: "18sp"
+            on_release: app.decode_data()
+
+    Label:
+        text: "Mnemonic"
+        size_hint_y: None
+        height: "40dp"
+        font_size: "16sp"
+
+    TextInput:
+        id: mnemonic_text
+        size_hint_y: .4
+        multiline: True
+        hint_text: "Enter mnemonic words..."
