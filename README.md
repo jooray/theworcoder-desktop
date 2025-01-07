@@ -4,6 +4,13 @@ A simple application that converts data into mnemonic words (using the [worcoder
 
 The mnemonic format and wordlist is from [python-shamir-mnemonic](https://github.com/trezor/python-shamir-mnemonic), parts of the code used under MIT license.
 
+Uses the [worcoder python library](https://github.com/jooray/worcoder)
+
+Compatible implementations:
+JavaScript library: [worcoder-js](https://github.com/jooray/worcoder-js)
+Progressive Web App: [deployed](https://cypherpunk.today/theworcoder/index.html), source:[theworcoder-pwa](https://github.com/jooray/theworcoder-pwa)
+
+
 ## Screenshot
 
 ![Screenshot](img/vorcoder-screenshot.png)
